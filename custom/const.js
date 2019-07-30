@@ -2,17 +2,25 @@ module.exports = {
 	DEBUG : false,
 
 	//FACEBOOK TOKEN
-	FB_APP_SECRET : '',
-	FB_PAGE_VERIFY_TOKEN : 'passsword_dang_yeu_nhat_qua_dat', // đặt 1 mã bất kỳ
-	FB_PAGE_ACCESS_TOKEN : '',
+	FB_APP_SECRET : 'd19f9c4fcc41e68669db06ba51dd9e3a',
+	FB_PAGE_VERIFY_TOKEN : 'baonganpham3011@@', // đặt 1 mã bất kỳ
+	FB_PAGE_ACCESS_TOKEN : 'EAAdisjWZCiokBANGE0eaEHzApRUTqcoXfL5dmpRU5KZAj3Ie1PFrWKqyFgw3JZChk0DAy8m5983kH2SbmVATaMoXNJnXgmRsufxUKIIthiygvsM8nzLg4w3qVksTZCaI0xWZAkRckkmrNm4nzzPU0rLXD076P8NPmopwTopwnZCwZDZD',
 
 	//HEROKU STUFFS
-	APP_NAME : '',
-	HEROKU_API_KEY : '',
-	KEEP_APP_ALWAYS_ON : false, // đổi thành true nếu đã thêm credit card vào heroku
+	APP_NAME : 'LTV-chatible',
+	HEROKU_API_KEY : '9fa7cfb7-f500-4c4c-8977-cb651a4bb0d1',
+	KEEP_APP_ALWAYS_ON : true, // đổi thành true nếu đã thêm credit card vào heroku
 
 	//MONGODB SETUP
-	DB_CONFIG_URI : '',
+	DB_CONFIG_URI : 'const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://anhpronbk:<baonganpham3011@@>@anhpronbk-g6ex3.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+',
 
 	//ANALYTICS
 	HAS_POST_LOG : false,
